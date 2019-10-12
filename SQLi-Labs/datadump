@@ -1,0 +1,13 @@
+current database: select database();
+
+current version: select version();
+
+current user: select current_user;
+
+show all database: select group_concat(schema_name) from information_schema.schemata;
+
+show all tables of database: select group_concat(table_name) from information_schema.tables where table_schema=database();
+
+show all columns of table: SELECT group_concat(column_name) FROM information_schema.columns WHERE table_name='tabl_name';
+
+directory: @@datadir
